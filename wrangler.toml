@@ -2,7 +2,6 @@ name = "sveltia-cms-auth"
 main = "src/index.js"
 compatibility_date = "2023-03-24"
 
-# Login til sisly.dk/admin. GITHUB_CLIENT_SECRET er sat som secret i Cloudflare-dashboardet.
-[vars]
-ALLOWED_DOMAINS = "sisly.dk"
-GITHUB_CLIENT_ID = "Ov23liiFdBfYZjlObCqH"
+# Behold variablerne fra Cloudflare-dashboardet (GITHUB_CLIENT_ID, ALLOWED_DOMAINS) ved deploy fra git.
+# GITHUB_CLIENT_SECRET er en secret og bevares altid.
+keep_vars = true
